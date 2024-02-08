@@ -6,7 +6,7 @@ Checkpoints and samples can be found at: COMING
 ## Description
 We explore the consequences of adding a time-dependent encoder to a diffusion model. In the case of a trainable encoder we can get an improved likelihood on CIFAR-10. We note that the way we choose to parameterize the trainable encoder enables the model to achieve a better latent loss without harming the diffusion loss. We do experiments on MNIST, CIFAR-10 and ImageNet32. 
 
-Code for generating the figures in the article is in article_figures.py. 
+Code for generating the figures in the article is in article_figures.py. Note that this requires the relevant checkpoints and sample files.  
  
 
 ## Installation guide
