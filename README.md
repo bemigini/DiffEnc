@@ -1,7 +1,13 @@
 # Denoising Diffusion Model with Data-Encoder
+Code for the article: [DiffEnc: Variational Diffusion with a Learned Encoder](https://arxiv.org/abs/2310.19789) by Beatrix M. G. Nielsen, Anders Christensen, Andrea Dittadi and Ole Winther. Article accepted for publication at ICLR 2024.
+
+Checkpoints and samples can be found at: [DTU Data](https://doi.org/10.11583/DTU.c.7065284) 
 
 ## Description
-TODO: Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+We explore the consequences of adding a time-dependent encoder to a diffusion model. In the case of a trainable encoder we can get an improved likelihood on CIFAR-10. We note that the way we choose to parameterize the trainable encoder enables the model to achieve a better latent loss without harming the diffusion loss. We do experiments on MNIST, CIFAR-10 and ImageNet32. 
+
+Code for generating the figures in the article is in article_figures.py. 
+ 
 
 ## Installation guide
 
@@ -57,7 +63,17 @@ Use the command:
 pip install flax==0.6.10 tensorflow-io-gcs-filesystem libclang tensorstore jaxtyping==0.2.20
 ```
 
+
+## Datasets
+MNIST and CIFAR-10 will be automatically loaded from tensorflow_datasets. 
+ImageNet32 must be downloaded from the [official ImageNet webpage](https://image-net.org/download-images.php). Note that this requires a user. 
+
+
 ## Usage
+
+
+Example of a bash script to train a model on ImageNet is in bash_run_example.s 
+
 TODO: Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
 ## Authors and acknowledgment
