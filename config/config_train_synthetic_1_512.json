@@ -1,0 +1,10 @@
+{
+    "dataset_name": "synthetic",
+    "seed": 1,
+    "num_steps_train": 5000,
+    "batch_size": 512,
+    "steps_per_logging": 500,
+    "steps_per_eval": 2000,
+    "steps_per_save": 2000,
+    "profile": false
+}

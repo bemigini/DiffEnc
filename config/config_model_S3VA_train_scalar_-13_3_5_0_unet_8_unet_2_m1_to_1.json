@@ -1,0 +1,50 @@
+{
+    "ddpm_type": "S3VA",
+    "vocab_size": 256,
+    "sample_softmax": false,
+    "n_timesteps": 0,
+    "antithetic_time_sampling": true,
+    "loss_parameterisation": "eps_hat",
+    "no_recon_loss": false,
+    "gamma_type": "train_scalar",
+    "gamma_min": -13.3,
+    "gamma_max": 5.0,
+    "score_model_config": {
+        "m_type": "unet",
+        "with_fourier_features": true,
+        "with_attention": false,
+        "n_embd": 128,
+        "n_layer": 8,
+        "num_groups_groupnorm": 32,
+        "p_dropout": 0.1,
+        "down_conv": false,
+        "pooling": false,
+        "channel_scaling": "same",
+        "non_id_init": false,
+        "kernel_init": ""
+    },
+    "encoder_config": {
+        "enc_type": "trainable",
+        "vocab_size": 256,
+        "nn_config": {
+            "m_type": "unet",
+            "with_fourier_features": true,
+            "with_attention": false,
+            "n_embd": 64,
+            "n_layer": 2,
+            "num_groups_groupnorm": 16,
+            "p_dropout": 0.1,
+            "down_conv": false,
+            "pooling": true,
+            "channel_scaling": "double",
+            "non_id_init": false,
+            "kernel_init": ""
+        },
+        "id_at_zero": false,
+        "m1_to_1": true,
+        "k": 1.0,
+        "gamma_reg": false,
+        "end_reg": false,
+        "end_half_reg": false
+    }
+}
