@@ -1,4 +1,4 @@
-# Denoising Diffusion Model with Data-Encoder
+# Denoising Diffusion Model with Time Dependent Encoder
 Code for the article: [DiffEnc: Variational Diffusion with a Learned Encoder](https://arxiv.org/abs/2310.19789) by Beatrix M. G. Nielsen, Anders Christensen, Andrea Dittadi and Ole Winther. Article accepted for publication at ICLR 2024.
 
 Checkpoints and samples can be found at: COMING
