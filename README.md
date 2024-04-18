@@ -113,7 +113,9 @@ python run.py sample --output-folder=<file> --config-folder=<file> --c-model=<fi
 ## Authors and acknowledgment
 This work was supported by the Danish Pioneer Centre for AI, DNRF grant number P1, and by the Ministry of Education, Youth and Sports of the Czech Republic through the e-INFRA CZ (ID:90254). OW’s work was funded in part by the Novo Nordisk Foundation through the Center for Basic Machine Learning Research in Life Science (NNF20OC0062606). AC thanks the ELLIS PhD program for support. 
 
-## License
+## License and Copyright
+Copyright © 2023 Technical University of Denmark
+
 See LICENSE.
 
 
