@@ -1,7 +1,7 @@
 # Denoising Diffusion Model with Time Dependent Encoder
 Code for the article: [DiffEnc: Variational Diffusion with a Learned Encoder](https://arxiv.org/abs/2310.19789) by Beatrix M. G. Nielsen, Anders Christensen, Andrea Dittadi and Ole Winther. Article accepted for publication at ICLR 2024.
 
-Checkpoints and samples can be found at: COMING
+Checkpoints can be found at: [DTU Data](https://doi.org/10.11583/DTU.c.7065284.v1)
 
 ## Description
 We explore the consequences of adding a time-dependent encoder to a diffusion model. In the case of a trainable encoder we can get an improved likelihood on CIFAR-10. We note that the way we choose to parameterize the trainable encoder enables the model to achieve a better latent loss without harming the diffusion loss. We do experiments on MNIST, CIFAR-10 and ImageNet32. 
